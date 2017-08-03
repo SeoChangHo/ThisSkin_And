@@ -82,3 +82,8 @@ div.ui-slider-switch.ui-mini {
 .ui-slider-track.ui-corner-all{
 	border-radius: 22em;
 }
+
+#ThisSkinSolution{
+	float: left;
+	margin: 0% 5%;
+}
