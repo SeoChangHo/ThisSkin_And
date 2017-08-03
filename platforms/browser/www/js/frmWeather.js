@@ -62,8 +62,8 @@ $(document).ready(function(){
 		           alert("<p>" + textStatus + "(HTTP-" + xhr.status + " / " + errMsg + ") </p>");
 		        }
 		});
-		
-	});
+
+});
 	
 	var setGugun = function(){
 		var gugun = document.getElementById("gugun");
@@ -131,6 +131,10 @@ $(document).ready(function(){
 			gugun.options.add(gugunOption);
 		}
 	}
+	
+	$(".ssset4").click(function(){
+			cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
+	});
 
 });
 

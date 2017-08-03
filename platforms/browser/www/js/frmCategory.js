@@ -9,6 +9,9 @@
 			$("#frmHeader").css("height",headersection);
 			$("#category").children().click(getArticle);
 			
+			$(".ssset4").click(function(){
+				cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
+			});
 		}());
 
 function onLoad() {

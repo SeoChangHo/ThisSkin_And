@@ -2,6 +2,10 @@
 		{
 	$("#loadIMG").hide();
 	
+	$(".ssset4").click(function(){
+		cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
+	});
+	
 	var headersection = ((window.innerHeight*0.10).toFixed(0));
 	var slider = (window.innerWidth*0.25).toFixed(0);
 	

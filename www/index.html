@@ -21,9 +21,27 @@
 
     <script type="text/javascript">
 
-        window.setTimeout(numnum, 3000);
+        window.setTimeout(numnum, 2000);
         
         function numnum(){
+        	
+       		try
+       		{
+       			window.FirebasePlugin.getToken(function(token) {
+       			    // save this server-side and use it to push notifications to this device
+       				localStorage.setItem('myToken', token);
+       				console.log(token);
+       			}, function(error) {
+       			    alert(error);
+       			});
+
+       		}
+       		catch(e)
+       		{
+       			alert(e.message);
+       		}
+        	
+        	
         	if(navigator.geolocation){
         		navigator.geolocation.getCurrentPosition(success, fail);
         	}else{

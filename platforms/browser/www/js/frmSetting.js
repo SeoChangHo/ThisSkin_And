@@ -1,16 +1,5 @@
 (function()
 		{	
-	var PushPermission = "On";
-	
-	if(localStorage.getItem("PushVal")!=null);
-	{
-		PushPermission = localStorage.getItem("PushVal");
-	}
-	
-	$("#switch").val(PushPermission);
-	
-	
-	//서창호 팀장///////////
 	var height = (window.innerHeight*0.75).toFixed(0);
 	var slider = (window.innerWidth*0.25).toFixed(0);
 	$("#SetService").click(function()
@@ -22,26 +11,30 @@
 	
 	$(".slider").css({left: slider*3 + "px"});
 	
-	$("#SetFineinsight").click(function(){
-		try{
-		FCMPlugin.getToken(function(token){
-		    alert(token);
-		});
-		}
-		catch(e)
-		{
-			alert(e.message);
-		}
-//		try{
-//		console.log("진동");
-//		cordova.InAppBrowser.open('http://www.fineinsight.kr', '_blank', 'location=yes');
-//
-//		}
-//		catch(e)
-//		{
-//			alert(e.message);
-//		}
+	$(".ssset4").click(function(){
+		cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
 	});
+	
+	
+	if(localStorage.getItem('PushVal')!=null)
+		{
+			$("#switch").val(localStorage.getItem('PushVal'));
+		}
+	else
+	{
+		$("#switch").val("On");
+	}
+	
+	$("#SetFineinsight").click(function(){
+		
+		cordova.InAppBrowser.open('http://www.fineinsight.kr', '_blank', 'location=yes');
+	});
+	
+	$("#SetInfo").click(function(){
+		
+		cordova.InAppBrowser.open('https://thisskin-android.firebaseapp.com/imformation/FineInsight.html', '_blank', 'location=yes');
+	});
+	
 
 	
 	
@@ -60,36 +53,16 @@
 		}
 		
 		
-		 const messaging = firebase.messaging();
-		  messaging.requestPermission()
-		  .then(function()
-		  {
-			  console.log("Have Permission");
-			  return messaging.getToken();
-		  })
-		  .then(function(token)
-		  {
-			 localStorage.setItem('myToken' , token);
-		  })
-		  .catch(function(err)
-		  {
-			  console.log("error Occured");
-		  });
-		  
-//		  FCMPlugin.getToken(
-//				  function(token){
-//					  localStorage.setItem('myToken' , token);
-//				  },
-//				  function(err){
-//					console.log('error retrieving token: ' + err);
-//				  }
-//				  );
-		  
 
 		
 		$("#switch").change(function()
 				{
-					localStorage.setItem('PushVal',$("#switch").val())
+			if($("#switch").val()=="On")
+				{
+				try{
+					localStorage.setItem('PushVal',$("#switch").val());
+					//window.FirebasePlugin.subscribe($("#switch").val());
+
 					
 					var topic = $("#switch").val();
 					var token = localStorage.getItem('myToken');
@@ -110,11 +83,49 @@
 				    }).catch(error => {
 				      console.error(error);
 				    })
+			}
+			catch(e)
+			{
+				alert(e.message);
+			}
+								
+				}
+			else
+			{
+				try
+				{
+					var topic = "On";
+					var token = localStorage.getItem('myToken');
+					localStorage.setItem('PushVal',$("#switch").val());
+					
+					fetch('https://iid.googleapis.com/iid/v1:batchRemove', {
+					    method: 'POST',
+					    headers: new Headers({
+					    	'Authorization': 'key=AAAAO1tLuEk:APA91bFGCBJ8ChOxCMTafDVMYRX8XNswaLjMABWO4jHW83bDocRG4deTekdd0zlvL7ODcMyrY3wKwCTDpy4Bv2KnoYwjufMS81dLdvWenejZW_9P3IDZh1t0tQsDnIxGWtI-NoN5XJew'
+					    }),
+					    body: JSON.stringify({
+					    	   "to": "/topics/On",
+					    	   "registration_tokens": [""+token+""]
+						})
+					}).then(response => {
+					    if (response.status < 200 || response.status >= 400) {
+					    	console.log(response.text());
+					        throw 'Error subscribing to topic: '+response.status + ' - ' + response.text();
+					      }
+					      console.log('UnSubscribed to "'+topic+'"');
+					    }).catch(error => {
+					      console.error(error);
+					    })
+					
+					
+				}
+				catch(e)
+				{
+					alert(e.message);
+				}
+			}
+			
 				})
 		
 		}
 ());
-
-
-
-
