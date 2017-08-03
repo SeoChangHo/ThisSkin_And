@@ -1,0 +1,149 @@
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited{
+	background-color: transparent;
+}
+
+#address{
+	width: 180px;
+}
+
+.bblist{
+	float: left;
+	width:5%
+}
+
+.bblist1{
+	float: left;
+	width: 60%;
+	padding: 5px 0px;
+	height: 94px;
+}
+
+.bblist2{
+	float: left;
+	width: 40%;
+	padding: 5px 0px;
+	height: 94px;
+	display: table;
+}
+
+.ondo{
+	display:table-cell;
+	vertical-align: bottom;
+	height:40%;
+	font-size: 0.9em;
+	color: #171c61;
+}
+
+.ondo1{
+	display: table-row;
+	height:30%;
+	vertical-align: middle;
+	font-size: 1.8em;
+	color: #171c61;
+}
+
+.ondo2{
+	display: table-row;
+	vertical-align: top;
+	font-size: 0.8em;
+	height:20%;
+	color: #171c61;
+	line-height: inherit;
+}
+
+.subdo{
+	display:table-cell;
+	vertical-align: bottom;
+	height:40%;
+	font-size: 0.9em;
+	color: #171c61;
+}
+
+.subdo1{
+	display: table-row;
+	height:30%;
+	vertical-align: middle;
+	font-size: 1.9em;
+	color: #171c61;
+}
+
+.subdo2{
+	display: table-row;
+	vertical-align: top;
+	font-size: 0.8em;
+	height:20%;
+	color: #171c61;
+	line-height: inherit;
+	text-align:center;
+}
+
+.mise{
+	display:table-cell;
+	vertical-align: bottom;
+	height:40%;
+	font-size: 0.9em;
+	color: #171c61;
+}
+
+.mise1{
+display: table-row;
+	height:30%;
+	vertical-align: middle;
+	font-size: 1.9em;
+	color: #171c61;
+}
+
+.mise2{
+	display: table-row;
+	vertical-align: top;
+	font-size: 0.7em;
+	height:20%;
+	color: #171c61;
+	line-height: inherit;
+	text-align:center;
+}
+
+#mapSection{
+	float: right;
+	margin-top:10%;
+}
+
+#mainsection{
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.location{
+	font-size: 1em;
+}
+
+#sido-button {
+	width:90%;
+	padding: .8em .6em;
+	border-radius: 0px;
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+}
+
+#gugun-button {
+	width:90%;
+	padding: .8em .6em;
+	border-radius: 0px;
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+	background: url("../img/down1.png");
+}
+
+.ui-select{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+select::-ms-expand{
+	display:none;
+}

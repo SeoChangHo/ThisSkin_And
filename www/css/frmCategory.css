@@ -1,0 +1,176 @@
+button.ui-btn-inline, .ui-header button.ui-btn, .ui-footer button.ui-btn{
+	width:16px;
+	height: 16px;
+}
+
+a.ui-input-clear.ui-btn.ui-icon-delete.ui-btn-icon-notext.ui-corner-all{
+	padding: 0px;
+}
+
+a#backmenu.ui-btn.ui-icon-arrow-l.ui-shadow.ui-corner-all.ui-btn-icon-notext.ui-btn-inline{
+	margin-left: 5%;
+	maring-top: 0px;
+	maring-bottom: 0px;
+}
+
+#PageCategory{
+	background: white;
+}
+
+#PageSkininfo{
+	background: white;
+}
+
+#category{
+	width: 85%;
+	padding: 7.5%;
+	display: table-row-group;
+	line-height: 0px;
+}
+
+.mom1{
+	float:left;
+	width:62%;
+}
+
+.mom2{
+	float:left;	
+	width:38%;	
+}
+
+#haed{
+	width:100%;
+}
+
+#mybody{
+	width: 100%;
+}
+
+#leg{
+	width:100%;
+	float: none;
+}
+
+#articleTitle{
+	font-size: 5vw;
+}
+
+#articleLoad{
+	margin: 8%;
+	font-size: 5vw;
+}
+
+#articleView li{
+	float: left;
+	width: 46%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+#FavoriteView li{
+	float: left;
+	width: 46%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+}
+
+.divlist1{
+	font-size: 0.8em;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0% 5%;
+    padding-top: 5%;
+    color: #6d6d6d;
+}
+
+.divlist2{
+	font-size: 0.6em;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0% 5%;
+    padding-bottom: 5%;
+    color: #acacac;
+}
+
+.ui-listview>.ui-li-static{
+	padding: .2em .1em;
+	border: none;
+	border-radius: 5%;
+}
+
+#FavoriteTest{
+	border:none;
+	box-shadow: none;
+}
+
+div.mycontents{
+	margin: 0em 1em 0em 1em;
+}
+
+.sangdan{
+	float: right;
+    margin-right: 4%;
+    margin-top: 8%;
+    font-size: 17px;
+    color: #171c61;
+}
+
+
+
+@font-face{
+	font-family:"주아";
+	src:url("../font/BMJUA.TTF");
+	format('truetype');
+}
+
+.limesangdan{
+	float: right;
+    margin-right: 4%;
+    margin-top: 7%;
+    font-size: 1.6em;
+    color: #171c61;
+    font-family:"주아";
+    font-weight: lighter;
+}
+
+.toplist{
+	float: right;
+	margin-top: 8%;
+	margin-right: 4%;
+    color: #171c61;
+    font-size: 17px;
+}
+
+.toplist1{
+	float:right;
+	margin-right: 4%;
+    margin-top: 8%;
+    width:22px;
+    height: 22px;
+}
+
+.ui-header button.ui-btn{
+	width:26px;
+	height:26px;
+}
+
+.sojemok{
+	width:100%;
+	text-align:left;
+	color: #94be1b;
+	background: white;
+	font-size: 1em;
+}
+
+.ui-corner-all{
+	border-radius: 0.1em;
+	border
+}
+
+.ui-shadow-inset{
+	box-shadow:none;
+}
+
+.ui-input-search:after{
+	margin-left: 1%;
+}

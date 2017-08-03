@@ -1,0 +1,60 @@
+#btnLogin{
+	background: #c0c0c0;
+	color: white;
+	text-shadow:none;
+	text-align: left;
+	padding-left: 20%;
+}
+
+#btnLogin img{
+	vertical-align: middle;
+}
+
+#emailstyle {
+	color: #787878;
+}
+
+#emailstyle a{
+	color: #787878;
+}
+
+#GoogleLogin{
+	background: #f9766c;
+	color: white;
+	text-shadow:none;
+	text-align: left;
+	padding-left: 20%;
+}
+
+#GoogleLogin img{
+	vertical-align: middle;
+}
+
+#FaceBookLogin{
+	background: #3f5e8d;
+	color: white;
+	text-shadow:none;
+	text-align: left;
+	padding-left: 19%;
+}
+
+#FaceBookLogin img{
+	vertical-align: middle;
+}
+
+#TwitterLogin{
+	background: #4db4ea;
+	color: white;
+	text-shadow:none;
+	text-align: left;
+	padding-left: 19%;
+}
+
+#TwitterLogin img{
+	vertical-align: middle;
+}
+
+
+.menubutton{
+	float:left;
+}

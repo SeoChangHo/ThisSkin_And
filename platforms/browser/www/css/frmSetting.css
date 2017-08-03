@@ -1,0 +1,84 @@
+#settingmain{
+	width:84%;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.set1{
+	height: 52%;
+}
+
+.set2{
+	height: 15%;
+	border-bottom: 1px solid;
+	border-color: lightgray;
+	padding: 5% 5% 0% 5%;
+}
+
+.set3{
+	height: 6%;
+	padding: 2% 5% 2% 5%;
+	border-bottom: 1px solid;
+	border-color: lightgray;
+}
+
+.set4{
+	height: 6%;
+	padding: 2% 5% 2% 5%;
+	border-bottom: 1px solid;
+	border-color: lightgray;
+}
+
+.set5{
+	height: 6%;
+	padding: 2% 5% 2% 5%;
+}
+
+#pushpush{
+	
+}
+
+.pibu1{
+	height:47px; 
+	line-height:47px; 
+	vertical-align:middle;;
+	float:left;
+}
+
+.pibu2{
+	float:right;
+}
+
+.service{
+	float:left;
+}
+
+.service1{
+	float:right;
+	width: 22px;
+}
+
+.ui-slider-switch.ui-mini .ui-slider-handle{
+	background-color: #e2e2e2;
+}
+
+div.ui-slider-switch.ui-mini{
+	height: 27px;
+}
+
+.ui-page-theme-a .ui-slider-track .ui-btn-active{
+	text-shadow:none;
+	background-color: #7ea215;
+}
+
+.ui-page-theme-a .ui-btn:focus{
+	box-shadow:0 0 0 white;
+}
+
+div.ui-slider-switch.ui-mini {
+	width:57px;
+}
+
+.ui-slider-track.ui-corner-all{
+	border-radius: 22em;
+}
