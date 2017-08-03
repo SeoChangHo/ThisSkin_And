@@ -290,13 +290,11 @@ function weatherSystem(latitude, longtitude, gubun){
       	            		//추운
       	            		$(".blist1").html("<img src='../img/weather/cloudy.png' >");
       	            	  }else if(weather<=28){
-      	            		//대부분흐림
+      	            		//대부분구름
       	            		$(".blist1").html("<img src='../img/weather/mostlycloudy.png' >");
-      	            		$("#mainimg").html(summerhurim);
       	            	  }else if(weather<=30){
-      	            		//부분흐림
+      	            		//부분구름
       	            		$(".blist1").html("<img src='../img/weather/partlycloudy.png' >");
-      	            		$("#mainimg").html(summerhurim);
       	            	  }else if(weather<=31){
       	            		//밤 맑은
       	            		$(".blist1").html("<img src='../img/weather/cloudy.png' >");

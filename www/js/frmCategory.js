@@ -9,28 +9,7 @@
 			$("#frmHeader").css("height",headersection);
 			$("#category").children().click(getArticle);
 			
-			$(".ssset4").click(function(){
-				cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
-			});
 		}());
-
-function onLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
-}
-
-function onDeviceReady() {
-    document.addEventListener("backbutton", onBackKeyDown, false);
-}
-
-function onBackKeyDown(){
-	navigator.notification.confirm('앱을 종료하시겠습니까?', onBackKeyDownMsg, '이런피부', '취소, 종료');
-}
-
-function onBackKeyDownMsg(button) {
-    if(button == 2) {
-        navigator.app.exitApp();
-    }
-}
 
 function PreLoad()
 {
@@ -48,7 +27,6 @@ function PreLoad()
 	 {                               
 		 firebase.initializeApp(config);
 	 }
-	 
 	var categorytype ="head"
 
 	  // Get Elements
@@ -117,9 +95,14 @@ var getArticle = function()
 			    	      				+"<div class='divlist1'>"+snap.child('Title').val()+"</div>"
 			    	      				+"<div class='divlist2'>"+snap.child('Tag').val()+"</div>"
 			    	      	+"</li>"
-    	      	      
+			    	      	
 			    	  $(".divlist img").css("height", (window.innerHeight*0.17).toFixed(0));
+    		  	      
 		    	      $("#articleView").listview("refresh");
+		    	      
+		    	      
+		  
+		    	      
 		    	      ArticleListClick(count);
 		    	      
 		    	      $("#loadIMG").hide(); 
@@ -404,4 +387,4 @@ $(document).ready(function()
 	 {                               
 		 firebase.initializeApp(config);
 	 }
-})
+		})
