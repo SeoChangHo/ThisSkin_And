@@ -20,25 +20,32 @@
     <script type="text/javascript" src="cordova.js"></script>
 
     <script type="text/javascript">
-
+    
+    	try{
+    		
     	var networkState = navigator.connection.type;
+    	var states = {};
     	
-        window.setTimeout(numnum, 2000);
+    	}catch(e){
+    		alert(e.message);
+    	}
+    	
+        window.setTimeout(numnum, 1000);
         
         function numnum(){
         	
-       	    var states = {};
-       	    states[Connection.UNKNOWN]  = 'Unknown connection';
-       	    states[Connection.ETHERNET] = 'Ethernet connection';
-       	    states[Connection.WIFI]     = 'WiFi connection';
-       	    states[Connection.CELL_2G]  = 'Cell 2G connection';
-       	    states[Connection.CELL_3G]  = 'Cell 3G connection';
-       	    states[Connection.CELL_4G]  = 'Cell 4G connection';
-       	    states[Connection.CELL]     = 'Cell generic connection';
-       	    states[Connection.NONE]     = 'No network connection';
-        	
        		try
        		{
+       			
+       		    states[Connection.UNKNOWN]  = 'Unknown connection';
+       		    states[Connection.ETHERNET] = 'Ethernet connection';
+       		    states[Connection.WIFI]     = 'WiFi connection';
+       		    states[Connection.CELL_2G]  = 'Cell 2G connection';
+       		    states[Connection.CELL_3G]  = 'Cell 3G connection';
+       		    states[Connection.CELL_4G]  = 'Cell 4G connection';
+       		    states[Connection.CELL]     = 'Cell generic connection';
+       		    states[Connection.NONE]     = 'No network connection';
+       		    
        			if(states[networkState] == 'No network connection'){
        				alert("네트워크 상태를 확인해주세요");
        				navigator.app.exitApp();
@@ -57,13 +64,13 @@
        		{
        			alert(e.message);
        		}
-        	
-        	
+       		
         	if(navigator.geolocation){
         		navigator.geolocation.getCurrentPosition(success, fail);
         	}else{
         		alert("위치정보를 가져올 수 없는 기기입니다.");
         	}
+       		
         }
         
     	function success()
@@ -84,6 +91,16 @@
 <body>
 
 <div data-role="page">
+	<div style="
+		background:url(img/loading.gif) no-repeat center center;
+		position:fixed;
+		top:50%;
+		left:50%;
+		margin-top:-108px;
+		margin-left:-108px;
+		width:216px;
+		height:216px;
+		"  id="loadIMG"></div> 
 </div>
 
 </body>
