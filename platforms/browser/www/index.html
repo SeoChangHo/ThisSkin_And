@@ -21,12 +21,29 @@
 
     <script type="text/javascript">
 
+    	var networkState = navigator.connection.type;
+    	
         window.setTimeout(numnum, 2000);
         
         function numnum(){
         	
+       	    var states = {};
+       	    states[Connection.UNKNOWN]  = 'Unknown connection';
+       	    states[Connection.ETHERNET] = 'Ethernet connection';
+       	    states[Connection.WIFI]     = 'WiFi connection';
+       	    states[Connection.CELL_2G]  = 'Cell 2G connection';
+       	    states[Connection.CELL_3G]  = 'Cell 3G connection';
+       	    states[Connection.CELL_4G]  = 'Cell 4G connection';
+       	    states[Connection.CELL]     = 'Cell generic connection';
+       	    states[Connection.NONE]     = 'No network connection';
+        	
        		try
        		{
+       			if(states[networkState] == 'No network connection'){
+       				alert("네트워크 상태를 확인해주세요");
+       				navigator.app.exitApp();
+       			}
+       			
        			window.FirebasePlugin.getToken(function(token) {
        			    // save this server-side and use it to push notifications to this device
        				localStorage.setItem('myToken', token);

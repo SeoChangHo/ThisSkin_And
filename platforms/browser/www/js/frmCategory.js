@@ -9,7 +9,29 @@
 			$("#frmHeader").css("height",headersection);
 			$("#category").children().click(getArticle);
 			
+			$(document).on("pageshow","#PageCategory",function(){
+				document.addEventListener("deviceready", onDeviceReady, false);
+			});
+			
+			$(document).on("pageshow","#PageSkininfo",function(){
+				document.removeEventListener("backbutton", onBackKeyDown, false);
+			});
+
 		}());
+
+function onDeviceReady() {
+    document.addEventListener("backbutton", onBackKeyDown, false);
+}
+
+function onBackKeyDown(){
+	navigator.notification.confirm('앱을 종료하시겠습니까?', onBackKeyDownMsg, '이런피부', '취소, 종료');
+}
+
+function onBackKeyDownMsg(button) {
+    if(button == 2) {
+        navigator.app.exitApp();
+    }
+}
 
 function PreLoad()
 {
@@ -387,4 +409,4 @@ $(document).ready(function()
 	 {                               
 		 firebase.initializeApp(config);
 	 }
-		})
+})

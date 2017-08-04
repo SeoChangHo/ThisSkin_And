@@ -712,6 +712,14 @@
             "clobbers": [
                 "FirebasePlugin"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-firebase/www/firebase-browser.js",
+            "id": "cordova-plugin-firebase.FirebasePlugin",
+            "pluginId": "cordova-plugin-firebase",
+            "clobbers": [
+                "FirebasePlugin"
+            ]
         }
     ],
     "plugin_metadata": {

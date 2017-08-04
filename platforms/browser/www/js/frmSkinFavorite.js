@@ -6,6 +6,14 @@
 		cordova.InAppBrowser.open('https://play.google.com/store/apps/details?id=com.phonegap.ThisSkin', '_blank', 'location=yes');
 	});
 	
+	$(document).on("pageshow","#backback",function(){
+		document.addEventListener("deviceready", onDeviceReady, false);
+	});
+	
+	$(document).on("pageshow","#PageArticle",function(){
+		document.removeEventListener("backbutton", onBackKeyDown, false);
+	});
+	
 	var headersection = ((window.innerHeight*0.10).toFixed(0));
 	var slider = (window.innerWidth*0.25).toFixed(0);
 	
@@ -86,10 +94,6 @@
 				  	  
 				}
 			})}())
-			
-function onLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
-}
 
 function onDeviceReady() {
     document.addEventListener("backbutton", onBackKeyDown, false);

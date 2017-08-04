@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="../css/index.css"/>
+	<link rel="stylesheet" href="../css/frmCategory.css"/>
+	<script type="text/javascript" src="../cordova.js"></script>
+	
+	<title>북마크</title>
+	
+</head>
+<body onload="onLoad()">
+<div data-role="page" id="backback" >
+	<div data-role="panel" id="pnlMenu" data-display="overlay">
+   			<div id="mainlogoimg"><img src="../img/thisskin.png" width="100%"></div>
+   			<br/>
+   			<button id= "goLogin">로그인</button>
+   			<button id= "btnLogout">로그아웃</button>
+   			<hr/>
+   			
+   			<div id="sssetmain">
+   				<div class="ssset1"><a href="../weather/frmWeather.html" data-ajax="false" ><div class="menutype">피부 날씨</div><div class="menutype1"><img src="../img/right.png" width="100%" ></div></a></div>
+   				<div class="ssset2"><a href="../category/frmCategory.html" data-ajax="false"><div class="menutype">피부 정보</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   				<div class="ssset3"><a href="../favorite/frmSkinFavorite.html" data-ajax="false"><div class="menutype">즐겨 찾기</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   				<div class="ssset4"><a href="#"><div class="menutype">평가 하기</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   			</div> 
+   			
+   		</div>
+   		
+    
+		<div data-role="header"  id="frmHeader">
+         <div>
+	         <div id="topmenu"><a href="#pnlMenu"><img src="../img/menubutton.png" width="100%"></a></div>
+         </div>
+      </div>
+		
+	
+	
+		<div role="main" class="ui-content">
+		<div style="
+		background:url(../img/loading.gif) no-repeat center center;
+		position:fixed;
+		top:50%;
+		left:50%;
+		margin-top:-108px;
+		margin-left:-108px;
+		width:216px;
+		height:216px;
+		"  id="loadIMG"></div>
+		
+			<ul id="FavoriteView" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="키워드를 입력하세요">
+
+			</ul>
+        
+		</div>
+	
+	
+		<div data-role="footer" data-position="fixed" id="frmFooter">
+			<ul id="footertable">
+				<li id="footercell1" class="footercell"><a href="../weather/frmWeather.html"  data-ajax="false"><img src="../img/footer/foot1.png" width="50%"></a></li>  <!--  class="ui-btn-active" -->
+				<li id="footercell2" class="footercell"><a href="../category/frmCategory.html" data-ajax="false" ><img src="../img/footer/foot2.png" width="50%"></a></li>
+				<li id="footercell3" class="footercell"><a href="../favorite/frmSkinFavorite.html" data-ajax="false"><img src="../img/footer/foot3.png" width="50%"></a></li>
+				<li id="footercell4" class="footercell"><a href="../setting/frmSetting.html" data-ajax="false"><img src="../img/footer/foot4.png" width="50%"></a></li>
+				<li class="slider footercell"></li>
+			</ul>
+		</div>
+		
+		<script src = "https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+		<script src="../js/FirebaseLoginCheck.js"></script>
+		<script src="../js/frmSkinFavorite.js"></script>
+		
+	</div>
+	
+	
+	
+		<!-- Article Page -->
+	
+	<div data-role="page" id="PageArticle">
+		<div data-role="header" id="frmHeader" data-position="fixed">
+		    <div id="topmenu"><a data-rel="back" ><img src="../img/back.png" width="100%"></a></div>
+			<div id="FavoriteTest" class="toplist1"><img src="../img/bookmark1.png" width="100%"></div>
+			<div id="articleTitle" class="toplist"></div>
+		</div>
+	
+		
+		<div role="main"  class="whiteboard" id="articledetail">
+			<div id="articleLoad">
+				
+			</div>
+			
+			<input type="hidden" id="seq" value="">
+			<input type="hidden" id="Category" value="">
+		</div>
+		
+	    <!-- <script src = "https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+		<script src="../js/FirebaseLoginCheck.js"></script>
+		<script src="../js/frmSkinFavorite.js"></script> -->
+	</div>
+		
+</body>
+</html>

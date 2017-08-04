@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/frmWeather.css"/>
+    <script type="text/javascript" src="../cordova.js"></script>
+   
+    <title>피부날씨</title>    
+
+</head>
+<body onload="onLoad()">
+<div data-role="page" id="backback" >
+		<div data-role="panel" id="pnlMenu" data-display="overlay">
+   			<div id="mainlogoimg"><img src="../img/thisskin.png" width="100%"></div>
+   			<br>
+   			<button id= "goLogin">로그인</button>
+   			<button id= "btnLogout">로그아웃</button>
+   			<hr/>
+
+   			<div id="sssetmain">
+   				<div class="ssset1"><a href="../weather/frmWeather.html" data-ajax="false" ><div class="menutype">피부 날씨</div><div class="menutype1"><img src="../img/right.png" width="100%" ></div></a></div>
+   				<div class="ssset2"><a href="../category/frmCategory.html" data-ajax="false"><div class="menutype">피부 정보</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   				<div class="ssset3"><a href="../favorite/frmSkinFavorite.html" data-ajax="false"><div class="menutype">즐겨 찾기</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   				<div class="ssset4"><a href="#"><div class="menutype">평가 하기</div><div class="menutype1"><img src="../img/right.png" width="100%"></div></a></div>
+   			</div> 
+   			
+   		</div>
+  		
+    
+		<div data-role="header" id="frmHeader">
+			<div >
+			<div id="topmenu"><a href="#pnlMenu"><img src="../img/menubutton.png" width="100%"></a></div>
+			<div id="information"><a href="#transparent" data-rel="popup" data-position-to="#firstimg" ><img src="../img/infor.png" width="100%"></a></div>
+			<div id="mapSection">
+				<div class="loca" id="mapicon"></div>
+				<div class="loca">
+					<a href="#address" class="location" data-rel="popup"
+						data-position-to="#firstimg"></a>
+				</div>
+			</div>
+			</div>
+				<div id="transparent" data-role="popup" data-theme="none" data-shadow="false" data-overlay-theme="b">
+					<!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a> -->
+					<img src="../img/detailpage.png" class="popphoto" height="100%" width="100%" >
+				</div>
+		</div>
+
+		<div id="mainsection">
+			<div class="listsection">
+				<div id="address" data-role="popup" data-theme="a"
+					data-shadow="false" data-overlay-theme="b">
+					<form name="form1">
+						<select id="sido">
+							<option value="#">시/도 선택</option>
+							<option value="서울특별시">서울특별시</option>
+							<option value="인천광역시">인천광역시</option>
+							<option value="대전광역시">대전광역시</option>
+							<option value="광주광역시">광주광역시</option>
+							<option value="대구광역시">대구광역시</option>
+							<option value="울산광역시">울산광역시</option>
+							<option value="부산광역시">부산광역시</option>
+							<option value="경기도">경기도</option>
+							<option value="강원도">강원도</option>
+							<option value="충청북도">충청북도</option>
+							<option value="충청남도">충청남도</option>
+							<option value="전라북도">전라북도</option>
+							<option value="전라남도">전라남도</option>
+							<option value="경상북도">경상북도</option>
+							<option value="경상남도">경상남도</option>
+							<option value="제주특별자치도">제주특별자치도</option>
+						</select> <select id="gugun">
+						</select>
+					</form>
+				</div>
+				<div id="mainimg"></div>
+			</div>
+		</div>
+		
+		<div id="owl-demo" class="owl-carousel owl-theme">
+           <div class="item">
+				<div class="listsection2">
+					<div class="blist1"></div>
+					<div class="blist2"><div class="ondo"></div><div class="ondo1"></div><div class="ondo2"></div></div>
+				</div> 
+           </div>
+           <div class="item">
+				<div class="listsection2">
+					<div class="blist3"></div>
+					<div class="blist2"><div class="subdo"></div><div class="subdo1"></div><div class="subdo2"></div></div>
+				</div> 
+           </div>
+           <div class="item">
+           		<div class="listsection3">
+					<div class="bblist1"></div>
+					<div class="bblist2"><div class="mise"></div><div class="mise1"></div><div class="mise2"></div></div>
+           	    </div>
+           </div>
+      </div> 
+      
+
+      <!-- owl.carousel -->
+      <link rel="stylesheet" href="../css/owl.carousel.css">
+      <link rel="stylesheet" href="../css/owl.theme.css">
+      <script src="../js/owl.carousel.js"></script>
+      <script src="../js/frmWeather.js"></script>
+		
+		<div data-role="footer" data-position="fixed" id="frmFooter">
+			<ul id="footertable">
+				<li id="footercell1" class="footercell"><a href="../weather/frmWeather.html"  data-ajax="false"><img src="../img/footer/foot1.png" width="50%"></a></li>  <!--  class="ui-btn-active" -->
+				<li id="footercell2" class="footercell"><a href="../category/frmCategory.html" data-ajax="false" ><img src="../img/footer/foot2.png" width="50%"></a></li>
+				<li id="footercell3" class="footercell"><a href="../favorite/frmSkinFavorite.html" data-ajax="false"><img src="../img/footer/foot3.png" width="50%"></a></li>
+				<li id="footercell4" class="footercell"><a href="../setting/frmSetting.html" data-ajax="false"><img src="../img/footer/foot4.png" width="50%"></a></li>
+				<li class="slider footercell"></li>
+			</ul>
+		</div>
+		
+	    <script src = "https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+   		<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+		<script src="../js/FirebaseLoginCheck.js"></script>
+		
+	</div>
+	
+
+ 	
+</body>
+
+</html>

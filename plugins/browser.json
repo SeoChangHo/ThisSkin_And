@@ -66,6 +66,9 @@
         },
         "cordova-plugin-fcm": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     },
     "dependent_plugins": {
