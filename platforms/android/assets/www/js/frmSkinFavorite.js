@@ -14,7 +14,7 @@
 		document.removeEventListener("backbutton", onBackKeyDown, false);
 	});
 	
-	var headersection = ((window.innerHeight*0.10).toFixed(0));
+	var headersection = ((window.innerHeight*0.07).toFixed(0));
 	var slider = (window.innerWidth*0.25).toFixed(0);
 	
 	$("#frmHeader").css("height",headersection);

@@ -104,13 +104,13 @@ a#backmenu.ui-btn.ui-icon-arrow-l.ui-shadow.ui-corner-all.ui-btn-icon-notext.ui-
 }
 
 div.mycontents{
-	margin: 0em 1.3em 0em 1.3em;
+	margin: 0em 1.4em 0em 1.4em;
 }
 
 .sangdan{
 	float: right;
     margin-right: 4%;
-    margin-top: 8%;
+    margin-top: 5%;
     font-size: 17px;
     color: #171c61;
 }
@@ -126,8 +126,8 @@ div.mycontents{
 .limesangdan{
 	float: right;
     margin-right: 4%;
-    margin-top: 7%;
-    font-size: 1.6em;
+    margin-top: 5%;
+    font-size: 1.4em;
     color: #171c61;
     font-family:"주아";
     font-weight: lighter;
@@ -135,7 +135,7 @@ div.mycontents{
 
 .toplist{
 	float: right;
-	margin-top: 8%;
+	margin-top: 5%;
 	margin-right: 4%;
     color: #171c61;
     font-size: 17px;
@@ -144,7 +144,7 @@ div.mycontents{
 .toplist1{
 	float:right;
 	margin-right: 4%;
-    margin-top: 8%;
+    margin-top: 5%;
     width:22px;
     height: 22px;
 }

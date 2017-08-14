@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	
-	var headersection = ((window.innerHeight*0.10).toFixed(0));
+	var headersection = ((window.innerHeight*0.08).toFixed(0));
 	var mainsection = ((window.innerHeight*0.50).toFixed(0));
 	var item = ((window.innerHeight*0.18).toFixed(0));
 	var slider = (window.innerWidth*0.25).toFixed(0);
-	var mainwidth = (window.innerWidth*0.59).toFixed(0);
+	var mainwidth = (window.innerWidth*0.7).toFixed(0); 
 	
 	
 	if(window.innerHeight <= 568){
@@ -223,8 +223,6 @@ function weatherSystem(latitude, longtitude, gubun){
       	              	var summerrain = "<img src='../img/message/summerrain.gif' id='firstimg' style='width:100%'>";
       	              	var summerhurim = "<img src='../img/message/summerhurim.gif' id='firstimg' style='width:100%'>";
       	              
-      	              	//여름 message
-      	              	console.log("현재온도 : " + humidity);
       	              	
       	              	if(((temp-32)/1.8).toFixed(0) >30){
       	              		if(humidity>60){
@@ -274,7 +272,7 @@ function weatherSystem(latitude, longtitude, gubun){
       	            		$(".blist1").html("<img src='../img/weather/snow.png' >");
           	              }else if(weather<=20){
       	            		//먼지, 흐린
-      	            		$(".blist1").html("<img src='../img/weather/partlycloudy.png' >");
+      	            		$(".blist1").html("<img src='../img/weather/mostlycloudy.png' >");
       	            		$("#mainimg").html(summerhurim);
       	            	  }else if(weather<=22){
       	            		//안개, 침침한

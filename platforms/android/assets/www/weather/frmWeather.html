@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="../css/index.css"/>
     <link rel="stylesheet" href="../css/frmWeather.css"/>
-    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../cordova.js"></script>  
    
     <title>피부날씨</title>    
 
@@ -35,9 +35,7 @@
   		
     
 		<div data-role="header" id="frmHeader">
-			<div >
 			<div id="topmenu"><a href="#pnlMenu"><img src="../img/menubutton.png" width="100%"></a></div>
-			<div id="information"><a href="#transparent" data-rel="popup" data-position-to="#firstimg" ><img src="../img/infor.png" width="100%"></a></div>
 			<div id="mapSection">
 				<div class="loca" id="mapicon"></div>
 				<div class="loca">
@@ -45,11 +43,6 @@
 						data-position-to="#firstimg"></a>
 				</div>
 			</div>
-			</div>
-				<div id="transparent" data-role="popup" data-theme="none" data-shadow="false" data-overlay-theme="b">
-					<!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a> -->
-					<img src="../img/detailpage.png" class="popphoto" height="100%" width="100%" >
-				</div>
 		</div>
 
 		<div id="mainsection">
@@ -85,25 +78,43 @@
 		
 		<div id="owl-demo" class="owl-carousel owl-theme">
            <div class="item">
-				<div class="listsection2">
-					<div class="blist1"></div>
-					<div class="blist2"><div class="ondo"></div><div class="ondo1"></div><div class="ondo2"></div></div>
-				</div> 
+				<a href="#transparent" data-rel="popup" data-position-to="#firstimg">
+					<div class="listsection2">
+						<div class="blist1"></div>
+						<div class="blist2"><div class="ondo"></div><div class="ondo1"></div><div class="ondo2"></div></div>
+					</div>
+			    </a> 
            </div>
            <div class="item">
-				<div class="listsection2">
-					<div class="blist3"></div>
-					<div class="blist2"><div class="subdo"></div><div class="subdo1"></div><div class="subdo2"></div></div>
-				</div> 
+           		<a href="#transparent1" data-rel="popup" data-position-to="#firstimg">
+					<div class="listsection2">
+						<div class="blist3"></div>
+						<div class="blist2"><div class="subdo"></div><div class="subdo1"></div><div class="subdo2"></div></div>
+					</div> 
+				</a>
            </div>
            <div class="item">
-           		<div class="listsection3">
-					<div class="bblist1"></div>
-					<div class="bblist2"><div class="mise"></div><div class="mise1"></div><div class="mise2"></div></div>
-           	    </div>
+           		<a href="#transparent2" data-rel="popup" data-position-to="#firstimg">
+	           		<div class="listsection3">
+						<div class="bblist1"></div>
+						<div class="bblist2"><div class="mise"></div><div class="mise1"></div><div class="mise2"></div></div>
+	           	    </div>
+           	    </a>
            </div>
       </div> 
       
+      <div id="transparent" data-role="popup" data-theme="none" data-shadow="false" data-overlay-theme="b">
+			<!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a> -->
+			<img src="../img/weatherdetail.png" class="popphoto" height="100%" width="100%" >
+	  </div>
+      <div id="transparent1" data-role="popup" data-theme="none" data-shadow="false" data-overlay-theme="b">
+			<!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a> -->
+			<img src="../img/subdodetail.png" class="popphoto" height="100%" width="100%" >
+	  </div>
+      <div id="transparent2" data-role="popup" data-theme="none" data-shadow="false" data-overlay-theme="b">
+			<!-- <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a> -->
+			<img src="../img/misedetail.png" class="popphoto" height="100%" width="100%" >
+	  </div>
 
       <!-- owl.carousel -->
       <link rel="stylesheet" href="../css/owl.carousel.css">
