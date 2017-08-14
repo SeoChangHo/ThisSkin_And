@@ -118,8 +118,8 @@ div.mycontents{
 
 
 @font-face{
-	font-family:"주아";
-	src:url("../font/BMJUA.TTF");
+	font-family:"jua";
+	src:url("../font/BMJUA.ttf");
 	format('truetype');
 }
 
@@ -129,7 +129,7 @@ div.mycontents{
     margin-top: 5%;
     font-size: 1.4em;
     color: #171c61;
-    font-family:"주아";
+    font-family:"jua";
     font-weight: lighter;
 }
 
