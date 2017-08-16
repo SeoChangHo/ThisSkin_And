@@ -18,13 +18,12 @@
 <body>
 	<div data-role="page" id="backback">
 		<div data-role="header" class="ui-alt-icon ui-nodisc-icon" id="frmHeader">
-			<div>
-				<a id="topmenu" data-rel = "back" class="ui-btn ui-icon-arrow-l ui-shadow ui-corner-all ui-btn-icon-notext ui-btn-inline"></a>
-			</div>
+			<div id="topmenu"><a data-rel="back" ><img src="../img/back.png" width="100%"></a></div>
 		</div>
 	
 		<div></div>
 		<div role="main" id="ThisSkinSolution">
+		<br>
 			안녕하세요 ‘이런피부' 개발팀입니다.
 			<br>
 			<br>
@@ -46,7 +45,9 @@
 		</div>
 	</div>
 	
-	
+	<script>
+	document.removeEventListener("backbutton", onBackKeyDown, false);
+	</script>
 	
 </body>
 </html>

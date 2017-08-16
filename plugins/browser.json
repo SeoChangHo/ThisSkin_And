@@ -69,6 +69,19 @@
         },
         "cordova-plugin-firebase": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-buildinfo": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-universal-links-plugin": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-browsertab": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "com.phoengap.ThisSkin",
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     },
     "dependent_plugins": {

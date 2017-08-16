@@ -10,6 +10,12 @@
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
+        "cordova-plugin-browsertab": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-buildinfo": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
@@ -17,6 +23,13 @@
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
         "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-customurlscheme": {
+            "URL_SCHEME": "com.phoengap.ThisSkin",
+            "ANDROID_SCHEME": " ",
+            "ANDROID_HOST": " ",
+            "ANDROID_PATHPREFIX": "/",
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
         "cordova-plugin-device": {
@@ -68,6 +81,9 @@
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-universal-links-plugin": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     },

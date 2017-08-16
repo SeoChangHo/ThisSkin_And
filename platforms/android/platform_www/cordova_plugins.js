@@ -9,6 +9,22 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-plugin-browsertab.BrowserTab",
+        "file": "plugins/cordova-plugin-browsertab/www/browsertab.js",
+        "pluginId": "cordova-plugin-browsertab",
+        "clobbers": [
+            "cordova.plugins.browsertab"
+        ]
+    },
+    {
+        "id": "cordova-plugin-buildinfo.BuildInfo",
+        "file": "plugins/cordova-plugin-buildinfo/www/buildinfo.js",
+        "pluginId": "cordova-plugin-buildinfo",
+        "clobbers": [
+            "BuildInfo"
+        ]
+    },
+    {
         "id": "cordova-plugin-camera.Camera",
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "pluginId": "cordova-plugin-camera",
@@ -110,6 +126,14 @@ module.exports = [
         "pluginId": "cordova-plugin-contacts",
         "merges": [
             ""
+        ]
+    },
+    {
+        "id": "cordova-plugin-customurlscheme.LaunchMyApp",
+        "file": "plugins/cordova-plugin-customurlscheme/www/android/LaunchMyApp.js",
+        "pluginId": "cordova-plugin-customurlscheme",
+        "clobbers": [
+            "window.plugins.launchmyapp"
         ]
     },
     {
@@ -533,16 +557,27 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "id": "cordova-universal-links-plugin.universalLinks",
+        "file": "plugins/cordova-universal-links-plugin/www/universal_links.js",
+        "pluginId": "cordova-universal-links-plugin",
+        "clobbers": [
+            "universalLinks"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-battery-status": "1.1.2",
-    "cordova-plugin-camera": "2.1.1",
     "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-browsertab": "0.2.0",
+    "cordova-plugin-buildinfo": "1.1.0",
+    "cordova-plugin-camera": "2.1.1",
     "cordova-plugin-console": "1.0.7",
     "cordova-plugin-contacts": "2.0.1",
+    "cordova-plugin-customurlscheme": "4.3.0",
     "cordova-plugin-device": "1.1.6",
     "cordova-plugin-device-motion": "1.2.5",
     "cordova-plugin-device-orientation": "1.0.7",
@@ -560,7 +595,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.5",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-universal-links-plugin": "1.2.1"
 };
 // BOTTOM OF METADATA
 });
