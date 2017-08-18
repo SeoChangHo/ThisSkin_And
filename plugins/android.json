@@ -85,6 +85,9 @@
         },
         "cordova-universal-links-plugin": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     },
     "dependent_plugins": {
@@ -92,6 +95,9 @@
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         },
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "es6-promise-plugin": {
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     }

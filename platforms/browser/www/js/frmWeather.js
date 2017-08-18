@@ -450,3 +450,8 @@ function weatherSystem(latitude, longtitude, gubun){
         }
      })*/
 }
+
+function fbShare(){
+	window.plugins.socialsharing.share('', '이런피부 공유하기', 'https://firebasestorage.googleapis.com/v0/b/thisskin-ebdc9.appspot.com/o/body2%2Fbody2_999.jpg?alt=media&token=da828ea2-d579-47af-864b-0f4714d32fa3', 'https://x8vy7.app.goo.gl/wzVj');
+};
+ 

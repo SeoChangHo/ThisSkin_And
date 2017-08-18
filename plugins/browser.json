@@ -82,6 +82,9 @@
         "cordova-plugin-customurlscheme": {
             "URL_SCHEME": "com.phoengap.ThisSkin",
             "PACKAGE_NAME": "com.phonegap.ThisSkin"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     },
     "dependent_plugins": {
@@ -90,6 +93,9 @@
         },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "com.phonegap.ThisSkin"
         }
     }
 }

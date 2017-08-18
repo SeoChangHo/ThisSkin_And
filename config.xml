@@ -130,4 +130,5 @@
     <plugin name="cordova-plugin-customurlscheme" spec="~4.3.0">
         <variable name="URL_SCHEME" value="com.phoengap.ThisSkin" />
     </plugin>
+    <plugin name="cordova-plugin-x-socialsharing" spec="~5.1.8" />
 </widget>
