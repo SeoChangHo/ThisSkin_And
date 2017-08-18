@@ -450,6 +450,41 @@ function weatherSystem(latitude, longtitude, gubun){
 }
 
 function fbShare(){
-	window.plugins.socialsharing.share('', '이런피부 공유하기', 'https://firebasestorage.googleapis.com/v0/b/thisskin-ebdc9.appspot.com/o/body2%2Fbody2_999.jpg?alt=media&token=da828ea2-d579-47af-864b-0f4714d32fa3', 'https://x8vy7.app.goo.gl/wzVj');
+	window.plugins.socialsharing.share(null, null, 'https://firebasestorage.googleapis.com/v0/b/thisskin-ebdc9.appspot.com/o/message%2FThisSkinScreen.jpg?alt=media&token=27480557-f444-46b3-89b2-c3d6b75b798e', 'https://x8vy7.app.goo.gl/wzVj');
+	
+			//	var imageLink;
+			//	
+			//	    navigator.screenshot.save(function(error,res){
+			//		    if(error){
+			//		      alert(error);
+			//		    }else{
+			//		      alert("ok"+res.filePath); //should be path/to/myScreenshot.jpg
+			//		    //For android
+			//		    imageLink = res.filePath;
+			//		   window.plugins.socialsharing.share(null, null,'file://'+imageLink, null);
+			//	
+			//		   //For iOS
+			//		   //window.plugins.socialsharing.share(null,   null,imageLink, null)
+			//	    	}
+			//	    },'jpg',80,'myScreenShot');
+				
+			
+			
+			//	navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
+			//	
+			//	var captureSuccess = function(mediaFiles) {
+			//	    var i, path, len;
+			//	    for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+			//	        path = mediaFiles[i].fullPath;
+			//	        // do something interesting with the file
+			//	    }
+			//	    
+			//	    alert(path);
+			//	};
+			//
+			//	// capture error callback
+			//	var captureError = function(error) {
+			//	    navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
+			//	};
 };
  
