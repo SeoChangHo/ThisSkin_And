@@ -50,25 +50,25 @@
 				googleBtn.onclick = function()
 						{
 							var provider = new firebase.auth.GoogleAuthProvider();
-							alert(provider);
-							firebase.auth().signInWithPopup(provider).then(function() {
+							alert("1");
+							
+							firebase.auth().signInWithRedirect(provider).then(function() {
 								  firebase.auth().getRedirectResult().then(function(result) {
 									  if (result.credential) {
-									    // This gives you a Google Access Token.
-									    // You can use it to access the Google API.
-									    var token = result.credential.accessToken;
-									    // The signed-in user info.
-									    var user = result.user;
-									    // ...
-									    window.location.href="../weather/frmWeather.html";
-									  }
+										  	alert("2");
+										    // This gives you a Google Access Token.
+										    // You can use it to access the Google API.
+										    var token = result.credential.accessToken;
+										    // The signed-in user info.
+										    var user = result.user;
+										    // ...
+										  }
 								  }).catch(function(error) {
 								    // Handle Errors here.
 								    var errorCode = error.code;
 								    var errorMessage = error.message;
-								    alert(errorCode + " " + errorMessage);
 								  });
-							});
+								});
 						};
 				
 				

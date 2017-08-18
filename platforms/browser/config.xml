@@ -22,7 +22,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <universal-links>
-        <host name="x8vy7.app.goo.gl" scheme="https" />
+        <host name="x8vy7.app.goo.gl/wzVj" scheme="https" />
         <host name="thisskin-ebdc9.firebaseapp.com" scheme="https">
             <path url="/__/auth/callback" />
         </host>

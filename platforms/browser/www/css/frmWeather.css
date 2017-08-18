@@ -104,8 +104,16 @@ display: table-row;
 }
 
 #mapSection{
-	float: right;
-	margin-top:5%;
+	padding-top: 5%;
+	padding-left: 30%;
+}
+
+#mainjuso{
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	word-wrap:normal;
 }
 
 #mainsection{
