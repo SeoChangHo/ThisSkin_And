@@ -4,8 +4,7 @@ $(document).ready(function(){
 	var mainsection = ((window.innerHeight*0.50).toFixed(0));
 	var item = ((window.innerHeight*0.18).toFixed(0));
 	var slider = (window.innerWidth*0.25).toFixed(0);
-	var mainwidth = (window.innerWidth).toFixed(0); 
-	var mainheight = ((window.innerHeight*0.04).toFixed(0));
+	var mainwidth = (window.innerWidth*0.6).toFixed(0); 	
 	var locationwidth = (window.innerWidth*0.35).toFixed(0); 
 	
 	if(window.innerHeight <= 568){
@@ -29,7 +28,6 @@ $(document).ready(function(){
 	$(".item").css("height",item);
 	$(".slider").css({left: "0px"});
 	$("#mapSection").css("width",mainwidth);
-	$("#mapSection").css("height",mainheight);
 	$("#mainjuso").css("width",locationwidth);
 	
 	loadPost();

@@ -104,8 +104,8 @@ display: table-row;
 }
 
 #mapSection{
+	float:right;
 	padding-top: 5%;
-	padding-left: 30%;
 }
 
 #mainjuso{
@@ -122,7 +122,7 @@ display: table-row;
 }
 
 .location{
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
 #sido-button {
