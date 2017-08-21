@@ -450,7 +450,7 @@ function weatherSystem(latitude, longtitude, gubun){
 }
 
 function fbShare(){
-	window.plugins.socialsharing.share(null, null, 'https://firebasestorage.googleapis.com/v0/b/thisskin-ebdc9.appspot.com/o/message%2FThisSkinScreen.jpg?alt=media&token=27480557-f444-46b3-89b2-c3d6b75b798e', 'https://x8vy7.app.goo.gl/wzVj');
+	window.plugins.socialsharing.share(null, null, null, 'https://x8vy7.app.goo.gl/wzVj');
 	
 			//	var imageLink;
 			//	
