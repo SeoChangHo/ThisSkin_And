@@ -664,6 +664,22 @@ module.exports = [
         "id": "es6-promise-plugin.Promise",
         "pluginId": "es6-promise-plugin",
         "runs": true
+    },
+    {
+        "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
+        "id": "com.darktalker.cordova.screenshot.screenshot",
+        "pluginId": "com.darktalker.cordova.screenshot",
+        "merges": [
+            "navigator.screenshot"
+        ]
+    },
+    {
+        "file": "plugins/com.darktalker.cordova.screenshot/www/Screenshot.js",
+        "id": "com.darktalker.cordova.screenshot.screenshot",
+        "pluginId": "com.darktalker.cordova.screenshot",
+        "merges": [
+            "navigator.screenshot"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -697,7 +713,8 @@ module.exports.metadata =
     "cordova-plugin-browsertab": "0.2.0",
     "cordova-plugin-customurlscheme": "4.3.0",
     "cordova-plugin-x-socialsharing": "5.1.8",
-    "es6-promise-plugin": "4.1.0"
+    "es6-promise-plugin": "4.1.0",
+    "com.darktalker.cordova.screenshot": "0.1.5"
 }
 // BOTTOM OF METADATA
 });
